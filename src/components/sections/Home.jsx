@@ -1,39 +1,45 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import profile from "../../assets/react.svg";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="flex min-h-screen items-center pb-16 pt-28 sm:pt-32"
     >
-      <RevealOnScroll>
-        <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            Hi, I'm Leester
-          </h1>
-
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          As a passionate web developer, I specialize in creating clean, scalable web applications. 
-          My focus is on delivering solutions that not only perform exceptionally but also provide a seamless and delightful user experience.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="#projects"
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="#contact"
-              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
-            >
-              Contact Me
-            </a>
+      <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        {/* Portrait */}
+        <RevealOnScroll>
+          <div className="mx-auto w-full max-w-xs text-cyan-300 lg:max-w-sm">
+            <img src={profile} alt="Coming Soon" className="h-auto w-full" />
           </div>
-        </div>
-      </RevealOnScroll>
+        </RevealOnScroll>
+
+        {/* Text */}
+        <RevealOnScroll>
+          <div className="max-w-2xl">
+            <h1 className="text-balance text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              hi, <span className="gradient-text">leester</span> here.
+            </h1>
+
+            <p className="mt-6 max-w-xl text-pretty text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
+              IT Specialist and Full-stack Developer. I build responsive web
+              experiences and practical systems, and occasionally get to do both
+              at once.
+            </p>
+
+            <div className="mt-8">
+              <a
+                className="button-secondary inline-flex items-center gap-2"
+                href="#contact"
+              >
+                <span aria-hidden="true">✉</span>
+                Say hi!
+              </a>
+            </div>
+          </div>
+        </RevealOnScroll>
+      </div>
     </section>
   );
 };

@@ -1,98 +1,104 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
-export const About = () => {
-  const frontendSkills = [
-    "React",
-    "JavaScript",
-    "TailwindCSS",
-  ];
+const skillGroups = [
+  {
+    label: "Technologies & Stack",
+    skills: [
+      "React.js",
+      "JavaScript ES6+ & TypeScript",
+      "Java",
+      "Node.js",
+      "Python",
+      "SQL & NOSQL Databases",
+    ],
+  },
+  {
+    label: "Infrastructure & Platforms",
+    skills: [
+      "Vercel",
+      "IIS",
+      "Windows Server",
+      "Ubuntu Linux",
+      "Cisco Networking",
+      "Wazuh",
+    ],
+  },
+  {
+    label: "Scripting, Tools & Administration",
+    skills: [
+      "PowerShell",
+      "Bash",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Google Workspace",
+      "L1/L2 Support",
+    ],
+  },
+];
 
-  const backendSkills = ["Node.js", "Express", "Mysql", "MongoDB"];
-
-  return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+export const About = () => (
+  <section id="about" className="section-space relative">
+    <div className="section-shell">
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            About Me
-          </h2>
-
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-            A curious learner who thrives on exploring new knowledge, tech, and scientific advancements.
-            I love challenges and constantly seek growth! 🚀
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Frontend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
-                    "
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Backend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
-                    "
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong> B.S. in Information Technology </strong>  - Cordova Public College
-                </li>
-                <li>
-                  Relevant Coursework: Data Structures and Algorithms, Web Development, 
-                  Object Oriented Programming ...
-                </li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Frontend Developer at a freelance collective, collaborating with a team of talented professionals.( Present ){" "}
-                  </h4>
-                  <p>
-                  Developed and maintained microservices and websites for cloud-based applications, ensuring scalability and reliability.
-                  </p>
-                </div>
-
-              </div>
-            </div>
+        <div className="section-heading-grid">
+          <div>
+            <p className="section-kicker">/ About</p>
+            <h2 className="section-title">About me</h2>
           </div>
         </div>
       </RevealOnScroll>
-    </section>
-  );
-};
+
+      <div className="mt-14 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+        <RevealOnScroll>
+          <article className="panel flex h-full min-h-80 flex-col justify-between p-7 sm:p-9">
+            <p className="leading-7 text-slate-400">
+              I am currently an IT Specialist at CSV Now, where I build internal
+              systems and help manage the company’s IT infrastructure. My
+              experience covers software development, databases, networking,
+              system administration, deployment, and technical support. I also
+              work with Cisco networks, Google Workspace, IIS deployments, and
+              system security, while helping maintain reliable and efficient IT
+              operations.
+            </p>
+          </article>
+        </RevealOnScroll>
+
+        <RevealOnScroll>
+          <div className="panel p-7 sm:p-9">
+            <div className="mb-8 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-white">
+                {" "}
+                Technologies & tools I work with
+              </h3>
+            </div>
+            <div className="divide-y divide-white/10">
+              {skillGroups.map((group, index) => (
+                <div
+                  key={group.label}
+                  className="grid gap-4 py-6 first:pt-0 last:pb-0 sm:grid-cols-[9rem_1fr]"
+                >
+                  <div className="flex gap-3">
+                    <span className="font-mono text-xs text-cyan-400">
+                      0{index + 1}
+                    </span>
+                    <h4 className="font-medium text-slate-200">
+                      {group.label}
+                    </h4>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {group.skills.map((skill) => (
+                      <span key={skill} className="skill-pill">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </RevealOnScroll>
+      </div>
+    </div>
+  </section>
+);
