@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import avatar from "../assets/website_avatar.png";
 
 const links = ["About", "Experience", "Projects", "Contact"];
 
@@ -19,7 +20,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           aria-label="Leester, back to home"
         >
           <span className="grid h-9 w-9 place-items-center rounded-xl border border-cyan-300/30 bg-cyan-300/10 font-mono text-sm font-bold text-cyan-300 transition group-hover:bg-cyan-300 group-hover:text-slate-950">
-            LT
+            <img src={avatar} alt="Leester" className="h-5 w-5 rounded-full" />
           </span>
           <span className="font-semibold tracking-tight text-white">
             Leester<span className="text-cyan-300">.</span>
