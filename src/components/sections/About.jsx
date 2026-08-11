@@ -5,7 +5,7 @@ const skillGroups = [
     label: "Technologies & Stack",
     skills: [
       "React.js",
-      "JavaScript ES6+ & TypeScript",
+      "JavaScript ES6 & TypeScript",
       "Java",
       "Node.js",
       "Python",
@@ -21,6 +21,8 @@ const skillGroups = [
       "Ubuntu Linux",
       "Cisco Networking",
       "Wazuh",
+      "Github Actions",
+      "Google Cloud",
     ],
   },
   {

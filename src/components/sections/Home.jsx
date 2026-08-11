@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import profile from "../../assets/react.svg";
+import profile from "../../assets/avatar.png";
 
 export const Home = () => {
   return (
@@ -11,7 +11,11 @@ export const Home = () => {
         {/* Portrait */}
         <RevealOnScroll>
           <div className="mx-auto w-full max-w-xs text-cyan-300 lg:max-w-sm">
-            <img src={profile} alt="Coming Soon" className="h-auto w-full" />
+            <img
+              src={profile}
+              alt="Coming Soon"
+              className="h-auto w-full border border-cyan-800 rounded-2xl object-cover transform transition duration-500 hover:scale-[1.15] hover:rotate-[-20]"
+            />
           </div>
         </RevealOnScroll>
 

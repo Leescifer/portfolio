@@ -36,7 +36,7 @@ export const Projects = () => (
       <RevealOnScroll>
         <div className="section-heading-grid">
           <div>
-            <p className="section-kicker"> Selected work</p>
+            <p className="section-kicker"> / Selected work</p>
             <h2 className="section-title">What I’m building toward.</h2>
           </div>
           <div>

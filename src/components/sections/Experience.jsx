@@ -50,10 +50,6 @@ export const Experience = () => (
             <p className="section-kicker">/ Experience</p>
             <h2 className="section-title">Experience across IT.</h2>
           </div>
-          <p className="section-intro">
-            A growing career shaped by building for the web, supporting
-            technical systems, and solving problems with patience and precision.
-          </p>
         </div>
       </RevealOnScroll>
 

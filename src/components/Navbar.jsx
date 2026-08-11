@@ -11,7 +11,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-40 border-b border-blue-300/[0.08] bg-[#030712]/70 shadow-[0_12px_40px_rgba(0,0,0,0.2)] backdrop-blur-2xl">
+    <nav className="fixed inset-x-0 top-0 z-40 bg-[#030712]/70 shadow-[0_12px_40px_rgba(0,0,0,0.2)] backdrop-blur-2xl">
       <div className="section-shell flex h-20 items-center justify-between">
         <a
           href="#home"

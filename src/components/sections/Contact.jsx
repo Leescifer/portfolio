@@ -9,7 +9,7 @@ export const Contact = () => (
     <div className="section-shell relative z-10">
       <RevealOnScroll>
         <div className="mx-auto max-w-4xl text-center">
-          <p className="section-kicker justify-center"> Contact</p>
+          <p className="section-kicker justify-center"> / Contact</p>
           <h2 className="mt-5 text-balance text-4xl font-semibold leading-tight tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl">
             Have a problem worth solving?
           </h2>
