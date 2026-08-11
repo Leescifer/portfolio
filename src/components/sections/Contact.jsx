@@ -2,10 +2,6 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Contact = () => (
   <section id="contact" className="section-space relative overflow-hidden">
-    <div
-      className="contact-glow absolute bottom-0 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full"
-      aria-hidden="true"
-    />
     <div className="section-shell relative z-10">
       <RevealOnScroll>
         <div className="mx-auto max-w-4xl text-center">
@@ -32,7 +28,7 @@ export const Contact = () => (
           </div>
           <a
             href="mailto:leester9103@gmail.com"
-            className="mt-8 inline-block font-mono text-sm text-slate-500 transition hover:text-cyan-300"
+            className="mt-8 inline-block font-mono text-sm text-slate-500 transition hover:text-[#d63a43]"
           >
             leester9103@gmail.com
           </a>

@@ -40,9 +40,6 @@ export const Experience = () => (
     id="experience"
     className="section-space experience-section relative overflow-hidden"
   >
-    <div className="space-orb space-orb-one" aria-hidden="true" />
-    <div className="space-orb space-orb-two" aria-hidden="true" />
-
     <div className="section-shell relative z-10">
       <RevealOnScroll>
         <div className="section-heading-grid">
@@ -56,14 +53,14 @@ export const Experience = () => (
       <div className="experience-timeline mt-14">
         {experience.map((item, index) => (
           <RevealOnScroll key={item.role}>
-            <article className="experience-card glass-card group">
+            <article className="experience-card flat-card group">
               <div className="experience-marker" aria-hidden="true">
                 <span className={item.active ? "is-active" : ""} />
               </div>
 
               <div className="grid gap-7 md:grid-cols-[10rem_1fr] md:gap-12">
                 <div>
-                  <span className="font-mono text-xs uppercase tracking-[0.16em] text-blue-300">
+                  <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#d63a43]">
                     {item.period}
                   </span>
                   <p className="mt-3 font-mono text-xs text-slate-600">
@@ -77,7 +74,7 @@ export const Experience = () => (
                       <h3 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
                         {item.role}
                       </h3>
-                      <p className="mt-2 text-sm font-medium text-blue-300/90">
+                      <p className="mt-2 text-sm font-medium text-[#d63a43]">
                         {item.organization}
                       </p>
                     </div>
@@ -91,7 +88,7 @@ export const Experience = () => (
                       {item.description.map((line, lineIndex) => (
                         <li key={lineIndex} className="flex gap-2">
                           <span
-                            className="mt-1 text-blue-300/80"
+                            className="mt-1 text-[#d63a43]"
                             aria-hidden="true"
                           >
                             &#8594;

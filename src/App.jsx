@@ -20,7 +20,7 @@ function App() {
       <div
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } overflow-x-hidden bg-slate-950 text-slate-100`}
+        } overflow-x-hidden bg-[#11100f] text-[#f3eee9]`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

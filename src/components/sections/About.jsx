@@ -4,43 +4,36 @@ const skillGroups = [
   {
     label: "Technologies & Stack",
     skills: [
-      "React.js",
+      "MERN Stack",
       "JavaScript ES6 & TypeScript",
-      "Java",
-      "Node.js",
-      "Python",
-      "SQL & NOSQL Databases",
+      "Java, Python",
+      "SQL & NoSQL Databases",
     ],
   },
   {
     label: "Infrastructure & Platforms",
     skills: [
-      "Vercel",
-      "IIS",
-      "Windows Server",
-      "Ubuntu Linux",
+      "Vercel, Github Actions",
+      "IIS, Wazuh ",
+      "Ubuntu Linux, Windows Server",
       "Cisco Networking",
-      "Wazuh",
-      "Github Actions",
       "Google Cloud",
     ],
   },
   {
     label: "Scripting, Tools & Administration",
     skills: [
-      "PowerShell",
-      "Bash",
-      "Git",
-      "GitHub",
+      "PowerShell, Bash",
+      "L1/L2 Support",
+      "Git, GitHub",
       "Postman",
       "Google Workspace",
-      "L1/L2 Support",
     ],
   },
 ];
 
 export const About = () => (
-  <section id="about" className="section-space relative">
+  <section id="about" className="section-space relative overflow-hidden">
     <div className="section-shell">
       <RevealOnScroll>
         <div className="section-heading-grid">
@@ -51,37 +44,34 @@ export const About = () => (
         </div>
       </RevealOnScroll>
 
-      <div className="mt-14 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-[0.8fr_1.2fr]">
         <RevealOnScroll>
-          <article className="panel flex h-full min-h-80 flex-col justify-between p-7 sm:p-9">
+          <article className="panel flex h-full flex-col justify-between gap-6 p-6 sm:p-9">
             <p className="leading-7 text-slate-400">
-              I am currently an IT Specialist at CSV Now, where I build internal
-              systems and help manage the company’s IT infrastructure. My
-              experience covers software development, databases, networking,
-              system administration, deployment, and technical support. I also
-              work with Cisco networks, Google Workspace, IIS deployments, and
-              system security, while helping maintain reliable and efficient IT
-              operations.
+              I’m currently an IT Specialist at CSV Now, working across software
+              development and IT operations while continuously expanding my
+              experience in technology. Beyond work, I enjoy exploring modern
+              and emerging technologies, staying physically active, and
+              continuously learning new skills.
             </p>
           </article>
         </RevealOnScroll>
 
         <RevealOnScroll>
-          <div className="panel p-7 sm:p-9">
-            <div className="mb-8 flex items-center justify-between">
-              <h3 className="text-xl font-semibold text-white">
-                {" "}
+          <div className="panel p-6 sm:p-9">
+            <div className="mb-6 flex items-center justify-between sm:mb-8">
+              <h3 className="text-lg font-semibold text-white sm:text-xl">
                 Technologies & tools I work with
               </h3>
             </div>
-            <div className="divide-y divide-white/10">
+            <div className="divide-y divide-[#38322d]">
               {skillGroups.map((group, index) => (
                 <div
                   key={group.label}
-                  className="grid gap-4 py-6 first:pt-0 last:pb-0 sm:grid-cols-[9rem_1fr]"
+                  className="grid gap-3 py-5 first:pt-0 last:pb-0 sm:gap-4 sm:py-6 md:grid-cols-[8rem_1fr]"
                 >
                   <div className="flex gap-3">
-                    <span className="font-mono text-xs text-cyan-400">
+                    <span className="font-mono text-xs text-[#d63a43]">
                       0{index + 1}
                     </span>
                     <h4 className="font-medium text-slate-200">

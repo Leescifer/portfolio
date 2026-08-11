@@ -7,7 +7,6 @@ const focusAreas = [
     description:
       "Responsive products built around clear user flows, reusable components, and maintainable code.",
     tags: ["React", "Tailwind CSS", "REST APIs"],
-    accent: "from-cyan-300/20 to-blue-500/5",
   },
   {
     number: "02",
@@ -15,7 +14,6 @@ const focusAreas = [
     description:
       "Practical end-to-end solutions connecting approachable interfaces to reliable data and server logic.",
     tags: ["Node.js", "Express", "SQL / NoSQL"],
-    accent: "from-violet-400/20 to-cyan-500/5",
   },
   {
     number: "03",
@@ -23,14 +21,13 @@ const focusAreas = [
     description:
       "Technical support and troubleshooting grounded in careful diagnosis, clear documentation, and follow-through.",
     tags: ["Systems", "Support", "Documentation"],
-    accent: "from-emerald-300/20 to-cyan-500/5",
   },
 ];
 
 export const Projects = () => (
   <section
     id="projects"
-    className="section-space border-y border-white/[0.06] bg-white/[0.015]"
+    className="section-space border-y border-[#38322d] bg-[#151311]"
   >
     <div className="section-shell">
       <RevealOnScroll>
@@ -61,16 +58,15 @@ export const Projects = () => (
         {focusAreas.map((area) => (
           <RevealOnScroll key={area.number}>
             <article className="project-card group">
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${area.accent} opacity-40 transition duration-500 group-hover:opacity-80`}
-                aria-hidden="true"
-              />
               <div className="relative flex h-full flex-col">
                 <div className="flex items-start justify-between">
-                  <span className="font-mono text-xs text-cyan-300">
+                  <div>
+                    <div className="project-accent mb-4" aria-hidden="true" />
+                    <span className="font-mono text-xs text-[#d63a43]">
                     /{area.number}
-                  </span>
-                  <span className="grid h-10 w-10 place-items-center rounded-full border border-white/10 text-slate-400 transition group-hover:border-cyan-300/40 group-hover:text-cyan-300">
+                    </span>
+                  </div>
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-[#38322d] text-slate-400 transition group-hover:border-[#d63a43] group-hover:text-[#d63a43]">
                     ↗
                   </span>
                 </div>
