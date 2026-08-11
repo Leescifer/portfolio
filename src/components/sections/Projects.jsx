@@ -63,7 +63,7 @@ export const Projects = () => (
                   <div>
                     <div className="project-accent mb-4" aria-hidden="true" />
                     <span className="font-mono text-xs text-[#d63a43]">
-                    /{area.number}
+                      /{area.number}
                     </span>
                   </div>
                   <span className="grid h-10 w-10 place-items-center rounded-full border border-[#38322d] text-slate-400 transition group-hover:border-[#d63a43] group-hover:text-[#d63a43]">

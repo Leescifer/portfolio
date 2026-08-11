@@ -46,7 +46,7 @@ export const About = () => (
 
       <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-[0.8fr_1.2fr]">
         <RevealOnScroll>
-          <article className="panel flex h-full flex-col justify-between gap-6 p-6 sm:p-9">
+          <article className="panel flex h-full flex-col p-6 sm:p-9">
             <p className="leading-7 text-slate-400">
               I’m currently an IT Specialist at CSV Now, working across software
               development and IT operations while continuously expanding my
@@ -80,7 +80,10 @@ export const About = () => (
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {group.skills.map((skill) => (
-                      <span key={skill} className="skill-pill">
+                      <span
+                        key={skill}
+                        className="skill-pill cursor-default transition-transform duration-200 ease-out hover:-translate-y-1 hover:scale-105"
+                      >
                         {skill}
                       </span>
                     ))}

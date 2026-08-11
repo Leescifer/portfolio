@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="flex min-h-screen items-center pb-16 pt-28 sm:pt-32"
+      className="flex min-h-[100dvh] items-center pb-16 pt-28 sm:pt-32"
     >
       <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         {/* Portrait */}
@@ -13,8 +13,10 @@ export const Home = () => {
           <div className="mx-auto aspect-square w-full max-w-xs overflow-hidden rounded-full bg-[#191715] lg:max-w-sm">
             <img
               src={profile}
-              alt="Leester Cruspero is Working Lol"
-              className="h-full w-full scale-[1.00] object-cover transition duration-500 hover:scale-[1.25]"
+              alt="Portrait of Leester Cruspero"
+              loading="eager"
+              fetchPriority="high"
+              className="h-full w-full object-cover transition duration-500 hover:scale-[1.25]"
             />
           </div>
         </RevealOnScroll>
